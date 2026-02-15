@@ -9,6 +9,145 @@
 <p>This is a paragraph in the HTML document.</p>
 <p>Another one please tell me the value</p>
 <body>
-    
+    <!-- PS C:\Users\rajya\OneDrive\Desktop\bstrp&js> cd project2
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git init
+Reinitialized existing Git repository in C:/Users/rajya/OneDrive/Desktop/bstrp&js/project2/.git/
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> ls
+
+
+    Directory: C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        15-02-2026     15:54              0 app.js
+-a---l        15-02-2026     22:44            231 index.html
+-a---l        15-02-2026     15:53              0 style.css
+
+
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git commit -m "hello"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git commit -m "message"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git add .
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git commit -m "message"
+[main (root-commit) 65b83d7] message
+ 3 files changed, 13 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 style.css
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+* main
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git checkout -b feature
+Switched to a new branch 'feature'
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+* feature
+  main
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch -m main
+fatal: a branch named 'main' already exists
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2>  git checkout main
+Switched to branch 'main'
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+  feature
+* main
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git checkout feature
+Switched to branch 'feature'
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+* feature
+  main
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git status 
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git add .
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git commit -m "message"
+[feature 57d22ef] message
+ 1 file changed, 1 insertion(+)
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git status
+On branch feature
+nothing to commit, working tree clean
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git BRANCH
+git: 'BRANCH' is not a git command. See 'git --help'.
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch
+* feature
+  main
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch -vv
+* feature 57d22ef message
+  main    65b83d7 message
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git status
+On branch feature
+nothing to commit, working tree clean
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git status
+On branch feature
+nothing to commit, working tree clean
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch --show-current
+>>
+feature
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git branch main
+fatal: a branch named 'main' already exists
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git checkout main 
+Switched to branch 'main'
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git log --oneline
+>>
+65b83d7 (HEAD -> main) message
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git checkout feature
+Switched to branch 'feature'
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git log --oneline
+57d22ef (HEAD -> feature) message
+65b83d7 (main) message
+PS C:\Users\rajya\OneDrive\Desktop\bstrp&js\project2> git log
+commit 57d22ef0da2f46bfabcb35928700173b7f86b9a2 (HEAD -> feature)
+Author: Raji@317 <rajyalakshmigangadhar563@gmail.com>
+Date:   Sun Feb 15 22:55:08 2026 +0530
+
+    message
+
+commit 65b83d75419edd1d8a8cd92268c29ba8b899cda4 (main)
+Author: Raji@317 <rajyalakshmigangadhar563@gmail.com>
+Date:   Sun Feb 15 22:51:11 2026 +0530
+
+    message
+(END) -->
 </body>
 </html>
